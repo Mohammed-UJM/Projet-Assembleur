@@ -1,0 +1,20 @@
+Bonjour,
+le programme de codage Jules  César  Niveau 2 se compose de trois modules :
+
+le modules principal jules2.s
+le module de conversion atoi.s
+et le module d'affichage affiche_car.s
+
+Donc pour compiler notre programme il faut taper les 3 commandes :
+
+as -a --gstabs jules2.s -o jules2.o
+as -a --gstabs atoi.s -o atoi.o
+as -a --gstabs affiche_car.s -o affiche_car.o
+
+et enfin la commande d'édition de liens :
+
+ld jules2.o atoi.o affiche_car.o -o jules2
+
+et pour éxecuter notre programme il faut taper la commande suivante :
+
+./jules2 <entier clé> <chaine à coder>

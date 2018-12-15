@@ -1,0 +1,20 @@
+Bonjour,
+Le notre programme de codage Vigenère  Niveau 2 se compose de trois modules :
+
+le modules principal vigenere2.s
+le module de verification min, maj ou non lettre verifie_min_maj_non_lettre.s
+et le module d'affichage affiche_car.s
+
+Donc pour compiler notre programme il faut taper les 3 commandes :
+
+as -a --gstabs vigenere2.s -o vigenere2.o
+as -a --gstabs verifie_min_maj_non_lettre.s -o verifie_min_maj_non_lettre.o
+as -a --gstabs affiche_car.s -o affiche_car.o
+
+et enfin la commande d'édition de liens :
+
+ld vigenere2.o verifie_min_maj_non_lettre.o affiche_car.o -o vigenere2
+
+et pour éxecuter notre programme il faut taper la commande suivante :
+
+./vigenere2 <chaine clé> <chaine à coder>
